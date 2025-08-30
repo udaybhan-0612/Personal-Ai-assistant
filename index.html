@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>AI Assistant</h1>
+        <p>Choose a function and enter your query.</p>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="controls-section">
+                <h2>Select a Function</h2>
+                <div class="function-buttons">
+                    <button id="btn-qna" class="active">Factual Q&A</button>
+                    <button id="btn-summarize">Summarize Text</button>
+                    <button id="btn-creative">Creative Writer</button>
+                </div>
+                
+                <p id="input-prompt">Enter your question:</p>
+                <textarea id="user-input" rows="5" placeholder="Type here..."></textarea>
+                <button id="submit-btn">Submit</button>
+            </div>
+
+            <div class="results-section">
+                <h2>Assistant Responses</h2>
+                <div id="results">
+                    <p>Results will appear here...</p>
+                </div>
+
+                <div class="feedback-area">
+                    <p>Was this response helpful?</p>
+                    <button id="btn-feedback-yes">Yes</button>
+                    <button id="btn-feedback-no">No</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

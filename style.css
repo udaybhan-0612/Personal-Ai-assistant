@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.controls-section, .results-section {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px;
+}
+
+h1, h2 {
+    color: #1a73e8;
+}
+
+.function-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.function-buttons button {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.function-buttons button.active {
+    background-color: #1a73e8;
+    color: #fff;
+}
+
+#user-input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+#submit-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #34a853;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#submit-btn:hover {
+    background-color: #2e8b45;
+}
+
+#results {
+    background-color: #fafafa;
+    border: 1px solid #eee;
+    padding: 15px;
+    min-height: 150px;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-top: 10px;
+}
+
+.result-block h4 {
+    margin-top: 0;
+    color: #00796b;
+}
+
+.feedback-area {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.feedback-area button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    margin: 0 5px;
+}
+
+#btn-feedback-yes {
+    background-color: #1a73e8;
+}
+
+#btn-feedback-no {
+    background-color: #dc3545;
+}
